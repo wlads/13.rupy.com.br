@@ -22,7 +22,8 @@ body {
   font-size: 1em;
   line-height: 1.5em;
 }
-a{
+a {
+  color: #35AEE7;
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -ms-transition: all 1s ease;
@@ -57,13 +58,19 @@ table {
   background: #FF0000;
   color: #ffffff;
 }
+.btn-last-change:hover {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
 .is-shadow {
   text-shadow: 0 1px 1px #222;
 }
 #first-content {
   padding-bottom: 60px;
-
-  background: #7dbf0c;
+  background: #35AEE7;
   background: -moz-linear-gradient(top,  #35AEE7 0%, #6A4195 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#35AEE7), color-stop(100%,#6A4195));
   background: -webkit-linear-gradient(top,  #35AEE7 0%,#6A4195 100%);
@@ -124,6 +131,9 @@ table {
 .link-papers:hover {
   color:#ccc;
 }
+.photo {
+  border: 5px solid #fbfbfb;
+}
 .link-photo {
   opacity: 1;
   -webkit-transition: all 1s ease;
@@ -165,8 +175,7 @@ table {
 }
 #speaker-area .speaker-photo {
   float: left;
-  overflow: hidden;
-  margin: 0 12px 0 0;
+  margin: 0 30px 0 0;
 }
 .speakers-name {
   margin: 0;
@@ -433,9 +442,28 @@ table {
   height: 300px;
 }
 
-
-
-
+.rupy-modal {
+  border: 8px solid #35AEE7!important;
+  border-radius: 0px;
+}
+.modal-footer {
+  background-color: #ffffff !important;
+}
+.title-modal {
+  color:red;
+}
+.text-modal {
+  color:#363636;
+}
+.photo-modal {
+  width: 160px;
+  margin-right: 25px;
+  margin-left: -30px;
+  float: left;
+}
+.box-social-modal {
+  width: 135px;
+}
 
 @media (min-width: 1200px) {
   .slogan {
