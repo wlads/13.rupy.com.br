@@ -1,15 +1,19 @@
-/*
-*
-* Green color 1: #35AEE7
-* Green color 2: #6A4195;
-*/
-
 @font-face {
 	font-family: 'FuturaBold';
 	font-style: normal;
 	font-weight: normal;
 	src: url("../fonts/futura_bold_bt-webfont.eot");
 	src: url("../fonts/futura_bold_bt-webfont.eot?#iefix") format("embedded-opentype"),url("../fonts/futura_bold_bt-webfont.woff") format("woff"),url("../fonts/futura_bold_bt-webfont.ttf") format("truetype"),url("../fonts/futura_bold_bt-webfont.svg#avalonbold") format("svg");
+}
+@font-face {
+  font-family: 'icomoon';
+  src:url('../fonts/icomoon.eot');
+  src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.woff') format('woff'),
+    url('../fonts/icomoon.ttf') format('truetype'),
+    url('../fonts/icomoon.svg#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
@@ -18,7 +22,13 @@ body {
   font-size: 1em;
   line-height: 1.5em;
 }
-
+a{
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
 dt {
   margin-bottom: 4px;
 }
@@ -106,12 +116,37 @@ table {
 .jumbotron h1.logo, .slogan {
   height: 255px;
 }
-
+.link-papers {
+  color: #fbfbfb;
+  font-weight: 500;
+  text-decoration: underline;
+}
+.link-papers:hover {
+  color:#ccc;
+}
+.link-photo {
+  opacity: 1;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.link-photo:hover {
+  opacity: 0.4;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
 #speaker-area .speakers-confirmed {
   margin: 0 0 20px 0;
 }
+/*.speakers-confirmed {
+  color:#363636;
+}*/
 #speaker-area .row-fluid {
-  background: #e7e7e7;
   margin-bottom: 24px;
 }
 #speaker-area .speakers-item {
@@ -133,18 +168,57 @@ table {
   overflow: hidden;
   margin: 0 12px 0 0;
 }
-
 .speakers-name {
   margin: 0;
+  margin-top: 36px;
+}
+.link-speaker{
+  color: red;
+  background: #fbfbfb;
+  padding: 5px;
 }
 .speakers-works-for {
   color: #7f8c8d;
+  background: #fbfbfb;
+  padding: 7px;
 }
 .speakers-room {
   color: #d35400;
+  background: #fbfbfb;
+  padding: 7px;
+  margin-left: -4px;
 }
 .speakers-bio {
-  color: #34495E;
+ /* color: #34495E;*/
+ color:#fbfbfb;
+}
+.icon-github, .icon-twitter, .icon-earth {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  background: #fbfbfb;
+  font-size: 2em;
+  width: 40px;
+  height: 35px;
+  border-radius: 50%;
+  float: left;
+  text-align: center;
+  margin-right: 5px;
+  padding-top: 3px;
+  -webkit-font-smoothing: antialiased;
+}
+.icon-github:before {
+  content: "\e005";
+}
+.icon-twitter:before {
+  content: "\e000";
+}
+.icon-earth:before {
+  content: "\e002";
 }
 
 #schedule-of-speakers table {
@@ -335,9 +409,9 @@ table {
   background-image: url(../images/logo-startup-vale.png);
 }
 
-.events-link.rupy {
+.events-link.agile {
   background-color: #000033;
-  background-image: url(../images/logo-rupy.png);
+  background-image: url(../images/logo-agile-vale.png);
 }
 
 .events-link img {
@@ -483,7 +557,7 @@ table {
     font-size: 22px;
   }
 
-  #other-events .events-link.rupy {
+  #other-events .events-link.agile {
     margin-top: 80px;
   }
 
