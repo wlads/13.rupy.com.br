@@ -9,8 +9,7 @@ module.exports = function(grunt) {
           [
           "stylesheets/bootstrap.min.css",
           "stylesheets/bootstrap-responsive.min.css",
-          "stylesheets/application.css",
-          "stylesheets/conheca-mais.css"
+          "stylesheets/application.css"
           ]
         }
       }
@@ -21,7 +20,7 @@ module.exports = function(grunt) {
         // livereload: true,
       },
       css: {
-        files: ["stylesheets/application.css", "stylesheets/conheca-mais.css"],
+        files: ["stylesheets/application.css"],
         tasks: ["cssmin"],
       },
     },
