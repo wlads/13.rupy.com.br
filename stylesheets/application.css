@@ -41,9 +41,6 @@ table {
   border-spacing: 0;
   width: 100%;
 }
-.lead {
-  font-size: 18px;
-}
 .link-fanpage {
   color: #F1F45F;
 }
@@ -455,11 +452,11 @@ table {
 .text-modal {
   color:#363636;
 }
-.photo-modal {
+.modal-body .speaker-photo {
+  margin: 0 20px 0 0;
+}
+.modal-body .photo {
   width: 160px;
-  margin-right: 25px;
-  margin-left: -30px;
-  float: left;
 }
 .box-social-modal {
   width: 135px;
