@@ -339,9 +339,9 @@ table {
   -moz-box-sizing: border-box;
 }
 
-.price-27-07, .price-11-08, .price-to-event {
+/*.price-27-07, .price-11-08, .price-to-event {
   text-decoration: line-through;
-}
+}*/
 
 .stopped-sales {
   color: #e67e22;
