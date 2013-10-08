@@ -1,10 +1,10 @@
 {
-  "name": "agilevale2013",
+  "name": "rupy2013",
   "version": "0.0.0",
-  "description": "agilevale2013 =============",
+  "description": "rupy2013 =============",
   "repository": {
     "type": "git",
-    "url": "git://github.com/designa/agilevale2013.git"
+    "url": "git://github.com/designa/13.rupy.com.br.git"
   },
   "dependencies": {
     "grunt": "~0.4.1",
