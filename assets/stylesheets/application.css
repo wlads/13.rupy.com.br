@@ -374,6 +374,28 @@ table {
   text-decoration: line-through;
 }
 
+.schedule .table {
+  background-color: #FFFFFF;
+  color: #666666;
+}
+.schedule .table th {
+  font-weight: bold;
+}
+
+.schedule .table th,
+.schedule .table td {
+  vertical-align: middle;
+}
+
+.schedule .table .well {
+  text-align: center;
+}
+
+.schedule .speaker-theme small {
+  display: block;
+  margin-top: 4px;
+}
+
 .stopped-sales {
   color: #e67e22;
 }
