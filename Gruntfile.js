@@ -5,11 +5,11 @@ module.exports = function(grunt) {
     cssmin: {
       combine: {
         files: {
-          "stylesheets/application.min.css":
+          "public/stylesheets/application.min.css":
           [
-          "stylesheets/bootstrap.min.css",
-          "stylesheets/bootstrap-responsive.min.css",
-          "stylesheets/application.css"
+          "bower_components/bootstrap/docs/assets/css/bootstrap.css",
+          "bower_components/bootstrap/docs/assets/css/bootstrap-responsive.css",
+          "assets/stylesheets/application.css"
           ]
         }
       }
@@ -20,23 +20,20 @@ module.exports = function(grunt) {
         // livereload: true,
       },
       css: {
-        files: ["stylesheets/application.css"],
+        files: ["assets/stylesheets/application.css"],
         tasks: ["cssmin"],
       },
     },
 
     bgShell: {
       gitAdd: {
-        cmd: "git add images/ -A"
+        cmd: "git add public/images/ -A"
       },
       gitCommit: {
         cmd: 'git commit -m "grunt deploy, task imagemin"'
       },
       gitPush: {
         cmd: 'git push'
-      },
-      deploy: {
-        cmd: "cap deploy"
       }
     },
 
@@ -44,7 +41,7 @@ module.exports = function(grunt) {
       dynamic: {
         files: [{
           expand: true,
-          cwd: "images/",
+          cwd: "public/images/",
           src: ["**/*.{png,jpg,jpeg,gif}"],
           dest: "images/"
         }]
