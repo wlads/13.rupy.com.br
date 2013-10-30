@@ -407,6 +407,13 @@ table {
   margin-top: 4px;
 }
 
+.schedule .table .talk-block {
+  height: 115px;
+}
+
+.link-talk:hover {
+  text-decoration: none;
+}
 .stopped-sales {
   color: #e67e22;
 }
