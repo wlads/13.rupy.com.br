@@ -157,6 +157,17 @@ table {
   -o-transition: all 1s ease;
   transition: all 1s ease;
 }
+.name-center {
+  text-align: center;
+  width: 75px;
+}
+.link-team {
+  color: #fff;
+}
+.link-team:hover {
+  color: #fff;
+  text-decoration: none;
+}
 #speaker-area .speakers-confirmed {
   margin: 0 0 20px 0;
 }
