@@ -106,7 +106,8 @@ table {
 
 .slogan p.location {
   font-size: 24px;
-  /*padding-top: 6px;*/
+  position: relative;
+  z-index: 1;
 }
 
 .text-center {
