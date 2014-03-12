@@ -1,5 +1,5 @@
-set :application, 'rupybrazil2013'
-set :repo_url, 'git@github.com:designa/13.rupy.com.br.git'
+set :application, 'rupynatal2014'
+set :repo_url, 'git@github.com:RuPy-Natal/rupy-natal.com.br.git'
 
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
 
