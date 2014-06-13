@@ -1,5 +1,8 @@
 #Instruções
 
+###Site publicado
+http://natal.rupy.com.br/
+
 ###Mac OS
 - Instale o Node: `brew install node`
 - Instale o grunt-cli: `npm install -g grunt-cli`
