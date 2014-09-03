@@ -25,6 +25,16 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'talk';
+  src:url('../fonts/talk.eot');
+  src:url('../fonts/talk.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/talk.ttf') format('truetype'),
+    url('../fonts/talk.woff') format('woff'),
+    url('../fonts/talk.svg#talk') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 
 body {
   color: #FFFFFF;
@@ -106,7 +116,8 @@ table {
 
 .slogan p.location {
   font-size: 24px;
-  /*padding-top: 6px;*/
+  position: relative;
+  z-index: 1;
 }
 
 .text-center {
@@ -247,6 +258,43 @@ table {
 .icon-earth:before {
   content: "\e002";
 }
+.talks-content {
+  float: left;
+  background: #fbfbfb;
+  width: 84%;
+  margin-top: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  height: 112px;
+}
+
+
+[class^="talk-"], [class*=" talk-"] {
+  font-family: 'talk';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  color: #35AEE7;
+  font-size: 2.8em;
+  width: 70px;
+  float: left;
+  margin-right: 5px;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.talk-camera:before {
+  content: "\e601";
+}
+.talk-image:before {
+  content: "\e602";
+}
+
 
 #schedule-of-speakers table {
   background: #fff;
@@ -522,6 +570,7 @@ table {
 }
 .modal-footer {
   background-color: #ffffff !important;
+  text-align: left;
 }
 .title-modal {
   color:red;
